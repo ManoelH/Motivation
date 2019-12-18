@@ -6,4 +6,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorDeepSkyBlue">#00BFFF</color>
     <color name="colorDeepBlue">#0D8FBE</color>
+    <color name="itemSelected">#FFFFFF</color>
+    <color name="itemUnselected">#CECECE</color>
+    <color name="colorBackground">#C4C0C0</color>
 </resources>

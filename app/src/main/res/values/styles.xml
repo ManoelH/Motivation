@@ -8,10 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.AppCompat.DayNight.FullScreen" parent="Theme.AppCompat.DayNight">
+    <style name="Theme.AppCompat.DayNight.SplashActivity" parent="Theme.AppCompat.DayNight">
         <item name="android:windowFullscreen">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.AppCompat.DayNight.MainActivity" parent="Theme.AppCompat.DayNight">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="iconsStyle" parent="AppTheme">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="textViews" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
 </resources>

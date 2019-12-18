@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SplashActivity"
             android:screenOrientation="sensor"
-            android:theme="@style/Theme.AppCompat.DayNight.FullScreen">
+            android:theme="@style/Theme.AppCompat.DayNight.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
-            android:screenOrientation="sensor">
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.AppCompat.DayNight.MainActivity">
         </activity>
     </application>
 

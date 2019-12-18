@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Motivation</string>
     <string name="enter_your_name">Enter your name</string>
+    <string name="main_message">Great  things never come from comfort zone</string>
+    <string name="save">Save</string>
+    <string name="new_phrase">New Phrase</string>
 </resources>

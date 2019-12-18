@@ -6,13 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+  <LinearLayout
+      android:id="@+id/mainMenu"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+          android:src="@drawable/ic_infinity_unselected"
+          style="@style/iconsStyle"/>
+
+      <ImageView
+          android:src="@drawable/ic_sun_unselected"
+          style="@style/iconsStyle"/>
+
+      <ImageView
+          android:src="@drawable/ic_happy_unselected"
+          style="@style/iconsStyle"/>
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/textViewUser"
+      style="@style/textViews"
+      android:text="User"
+      app:layout_constraintTop_toBottomOf="@id/mainMenu"
+      app:layout_constraintLeft_toLeftOf="@id/mainMenu"/>
+
     <TextView
+        android:id="@+id/textViewPhrase"
+        style="@style/textViews"
+        android:text="Phrase"
+        app:layout_constraintTop_toBottomOf="@id/textViewUser"
+        app:layout_constraintLeft_toLeftOf="@id/textViewUser"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/new_phrase"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@id/textViewPhrase"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
