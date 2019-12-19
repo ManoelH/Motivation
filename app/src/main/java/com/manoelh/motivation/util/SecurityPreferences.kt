@@ -1,16 +1,16 @@
 package com.manoelh.motivation.util
 
 import android.content.Context
+import android.content.SharedPreferences
 
 class SecurityPreferences (context: Context) {
 
-    private val sharedPreferences = context.getSharedPreferences("motivation", Context.MODE_PRIVATE)
+    private val mSharedPreferences: SharedPreferences = context.getSharedPreferences("motivation", Context.MODE_PRIVATE)
 
     fun storeString (key: String, value: String){
-        sharedPreferences.edit().putString(key, value).apply()
+        mSharedPreferences.edit().putString(key, value).apply()
     }
 
-    fun getStoreString(key: String){
-        sharedPreferences.getString(key, "")
-    }
+    fun getStoreString(key: String) = mSharedPreferences.getString(key, "")
+
 }

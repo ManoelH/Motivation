@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
   <LinearLayout
       android:id="@+id/mainMenu"
@@ -16,14 +16,17 @@
       app:layout_constraintTop_toTopOf="parent">
 
       <ImageView
+          android:id="@+id/imageViewInfinity"
           android:src="@drawable/ic_infinity_unselected"
           style="@style/iconsStyle"/>
 
       <ImageView
+          android:id="@+id/imageViewGoodMorning"
           android:src="@drawable/ic_sun_unselected"
           style="@style/iconsStyle"/>
 
       <ImageView
+          android:id="@+id/imageViewHappy"
           android:src="@drawable/ic_happy_unselected"
           style="@style/iconsStyle"/>
   </LinearLayout>
@@ -43,6 +46,7 @@
         app:layout_constraintLeft_toLeftOf="@id/textViewUser"/>
 
     <Button
+        android:id="@+id/buttonSavePhrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_phrase"

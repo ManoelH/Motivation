@@ -4,4 +4,5 @@
     <string name="main_message">Great  things never come from comfort zone</string>
     <string name="save">Save</string>
     <string name="new_phrase">New Phrase</string>
+    <string name="ENTER_A_NAME">Error enter a name</string>
 </resources>
