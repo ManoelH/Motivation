@@ -66,6 +66,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun insertUserNameToTextViewUser(){
-        textViewUser.text = mSecurityPreferences.getStoreString(Constants.KEY.USER_NAME_KEY)
+        textViewUser.text = "Hello, ${mSecurityPreferences.getStoreString(Constants.KEY.USER_NAME_KEY)}!"
     }
 }

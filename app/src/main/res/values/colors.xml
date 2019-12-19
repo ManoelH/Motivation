@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#0DB667</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="itemSelected">#FFFFFF</color>
-    <color name="itemUnselected">#DEF5F5</color>
+    <color name="itemUnselected">#C2CCCC</color>
     <color name="colorBackground">#B1B1B1</color>
     <color name="colorButton">#2ACF0C</color>
 </resources>

@@ -4,55 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
     tools:context=".activity.MainActivity">
 
-  <LinearLayout
-      android:id="@+id/mainMenu"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-      <ImageView
-          android:id="@+id/imageViewInfinity"
-          android:src="@drawable/ic_infinity_unselected"
-          style="@style/iconsStyle"/>
+    <ImageView
+        android:id="@+id/imageViewInfinity"
+        style="@style/iconsStyle"
+        android:layout_width="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_infinity_unselected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-      <ImageView
-          android:id="@+id/imageViewGoodMorning"
-          android:src="@drawable/ic_sun_unselected"
-          style="@style/iconsStyle"/>
+    <ImageView
+        android:id="@+id/imageViewGoodMorning"
+        style="@style/iconsStyle"
+        android:layout_width="100dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_sun_unselected"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHappy"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInfinity"
+        app:layout_constraintTop_toTopOf="parent" />
 
-      <ImageView
-          android:id="@+id/imageViewHappy"
-          android:src="@drawable/ic_happy_unselected"
-          style="@style/iconsStyle"/>
-  </LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewHappy"
+        style="@style/iconsStyle"
+        android:layout_width="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_happy_unselected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-  <TextView
-      android:id="@+id/textViewUser"
-      style="@style/textViews"
-      android:text="User"
-      app:layout_constraintTop_toBottomOf="@id/mainMenu"
-      app:layout_constraintLeft_toLeftOf="@id/mainMenu"/>
+    <TextView
+        android:id="@+id/textViewUser"
+        style="@style/textViews"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:text="User"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
         android:id="@+id/textViewPhrase"
         style="@style/textViews"
+        android:layout_height="19dp"
+        android:layout_marginTop="93dp"
         android:text="Phrase"
-        app:layout_constraintTop_toBottomOf="@id/textViewUser"
-        app:layout_constraintLeft_toLeftOf="@id/textViewUser"/>
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
 
     <Button
         android:id="@+id/buttonSavePhrase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorButton"
+        android:elevation="2dp"
         android:text="@string/new_phrase"
         android:textAllCaps="true"
-        app:layout_constraintTop_toBottomOf="@id/textViewPhrase"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhrase"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
