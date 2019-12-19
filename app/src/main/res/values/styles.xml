@@ -12,6 +12,7 @@
         <item name="android:windowFullscreen">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        <item name="android:background">#0DB667</item>
     </style>
 
     <style name="Theme.AppCompat.DayNight.MainActivity" parent="Theme.AppCompat.DayNight">

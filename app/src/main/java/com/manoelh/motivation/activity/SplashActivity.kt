@@ -12,13 +12,14 @@ import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var securityPreferences: SecurityPreferences
+    private lateinit var mSecurityPreferences: SecurityPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        securityPreferences = SecurityPreferences(applicationContext)
+        mSecurityPreferences = SecurityPreferences(applicationContext)
         setContentView(R.layout.activity_splash)
         buttonSave.setOnClickListener(this)
+        returnToMainActivityWhenUserNameIsNotEmpty()
     }
 
     override fun onClick(view: View) {
@@ -32,10 +33,19 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         if (userName == "")
             Toast.makeText(applicationContext, getString(R.string.ENTER_A_NAME), Toast.LENGTH_LONG).show()
         else{
-            securityPreferences.storeString(Constants.KEY.USER_NAME_KEY, userName)
-            val intent = Intent(applicationContext, MainActivity::class.java)
-            startActivity(intent)
+            mSecurityPreferences.storeString(Constants.KEY.USER_NAME_KEY, userName)
+            redirectToMainActivity()
         }
     }
 
+    private fun returnToMainActivityWhenUserNameIsNotEmpty(){
+        var userName = editTextName.text.toString()
+        if (userName != "")
+            redirectToMainActivity()
+    }
+
+    private fun redirectToMainActivity() {
+        val intent = Intent(applicationContext, MainActivity::class.java)
+        startActivity(intent)
+    }
 }

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorDeepSkyBlue">#00BFFF</color>
-    <color name="colorDeepBlue">#0D8FBE</color>
+    <color name="colorPrimary">#2ACF0C</color>
+    <color name="colorPrimaryDark">#0DB667</color>
+    <color name="colorAccent">#FFFFFF</color>
     <color name="itemSelected">#FFFFFF</color>
-    <color name="itemUnselected">#CECECE</color>
-    <color name="colorBackground">#C4C0C0</color>
+    <color name="itemUnselected">#DEF5F5</color>
+    <color name="colorBackground">#B1B1B1</color>
+    <color name="colorButton">#2ACF0C</color>
 </resources>
