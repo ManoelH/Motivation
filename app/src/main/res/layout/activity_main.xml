@@ -68,7 +68,7 @@
     <TextView
         android:id="@+id/textViewPhrase"
         style="@style/textViews"
-        android:layout_height="19dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="93dp"
         android:text="Phrase"
         android:textAlignment="center"
